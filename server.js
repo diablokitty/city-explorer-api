@@ -8,6 +8,10 @@ const express = require('express');
 const cors = require('cors');
 
 const app = express();
+
+//BRING IN JSON DATA
+let data =require('./data/weather.json')
+
 //USE
 app.use(cors());
 //Anything that is required must be used. Use is where required files are assigned variables.
@@ -23,7 +27,14 @@ app.get('/', (request, response) => {
   response.send('Hello from our server!');
 });
 
-app.get('/*', (request, response) => {
+app.get('/city', (request, response) => {
+  let city = request.query.city;
+  let cityData = data.find(city => city.name === city);
+  response.send(city);
+
+})
+
+app.get('*', (request, response) => {
   response.send('Something isn\'t right here.');
 });
 
