@@ -9,8 +9,8 @@ const cors = require('cors');
 
 const app = express();
 
-//BRING IN JSON DATA
-let data =require('./data/weather.json')
+const getWeather = require('./weather.js');
+const getMovies = require('./movies.js');
 
 //USE
 app.use(cors());
@@ -27,20 +27,22 @@ app.get('/', (request, response) => {
   response.send('Hello from our server!');
 });
 
-app.get('/city', (request, response) => {
-  let city = request.query.city;
-  let cityData = data.find(city => city.name === city);
-  response.send(city);
+app.get('/weather', getWeather);
 
-})
+app.get('/movies', getMovies);
 
 app.get('*', (request, response) => {
   response.send('Something isn\'t right here.');
 });
 
-//ERRORS
-//Error handling.
 
+//ERRORS
+app.use((err, req, res) => {
+
+  console.log(err.message);
+  res.status(500).send(err.message);
+
+});
 
 //LISTEN
 //This is where we start the server. This is an express method.

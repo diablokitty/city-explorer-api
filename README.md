@@ -7,6 +7,8 @@ Backend for the City Explorer project
 This diagram done in collaboration with David Suy and Jackson Gurney
 
 
+Profound thanks to Sheyna, Jordan and Rhea for dragging me through this assignment.
+
 **Author**: Amy Pierce
 **Version**: 1.0.0 (increment the patch/fix version number ifAD you make more commits past your first submission)
 
@@ -26,16 +28,42 @@ This project requires the installation of npm, express, dotenv, nodemon (install
 
 ## Credit and Collaborations
 
-Thanks to Sheyna Watkins, Shane Roach, Grant Garfield, Jackson Gurney, David Suy 
+Thanks to  Shane Roach, Grant Garfield, Jackson Gurney, David Suy, and most especially Sheyna Watkins, Jordan Yamada and Rhea Carillo for dragging me to the finish line. 
 
 Time Estimates
 For each of the lab features, make an estimate of the time it will take you to complete the feature, and record your start and finish times for that feature:
 
-Name of feature: ________________________________
+Name of feature: Build Backend
 
-Estimate of time needed to complete: _____
+Estimate of time needed to complete: 4 hours
+
+Start time: ?
+
+Finish time: ?
+
+Actual time needed to complete: A week
+
+Time Estimates
+For each of the lab features, make an estimate of the time it will take you to complete the feature, and record your start and finish times for that feature:
+
+Name of feature: Weather Data
+
+Estimate of time needed to complete: 3 hours
 
 Start time: _____
+
+Finish time: _____
+
+Actual time needed to complete: 10 hours and help
+
+Time Estimates
+For each of the lab features, make an estimate of the time it will take you to complete the feature, and record your start and finish times for that feature:
+
+Name of feature: Movie Data
+
+Estimate of time needed to complete: 3 hours
+
+Start time: 10:45 am
 
 Finish time: _____
 
